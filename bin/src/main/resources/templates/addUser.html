@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add user</title>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/css/add.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/formauth.js}"></script>
+</head>
+<body>
+<h1 class="align">ABC Recruitment</h1>
+<h2 class="align">Please fill out your details in the form below so that we can find the suitable job for you.</h2>
+<div class="center">
+<form action="#" th:action="@{/addUser}" th:object="${user}" method="post" onsubmit="return validateForm()">
+  <h3 class="align">Candidate details</h3>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" th:field="*{fname}">
+  &nbsp;
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" th:field="*{lname}">
+  <div id ="fname1" class= "valtext"></div><br><br> 	
+  <label for="addr">Address:</label>
+  <input type="text" id="addr" th:field="*{addr}">
+  <div id ="addr1" class= "valtext"></div>
+  <p>Gender:
+  <input type="radio" id="male" th:field="*{gender}" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" th:field="*{gender}" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" th:field="*{gender}" value="other">
+  <label for="other">Other</label></p>
+  <div id ="identity" class= "valtext"></div> 
+  <label for="Country">Country</label>
+  <select id="Country" th:field="*{Country}" >
+    <option th:value="none" selected hidden> -- select an option -- </option>
+    <option th:value="Ireland">Ireland</option>
+  </select>
+  &nbsp;
+  &nbsp;
+  <label for="County">County/State</label>
+  <select id="County" th:field="*{County}" >
+    <option th:value="none" selected hidden> -- select an option -- </option>
+    <option th:value="Carlow">Carlow</option>
+    <option th:value="Cork">Cork</option>
+    <option th:value="Dublin">Dublin</option>
+    <option th:value="Donegal">Donegal</option>
+    <option th:value="Galway">Galway</option>
+    <option th:value="Limerick">Limerick</option>
+  </select><br><br>
+  <div id ="location" class= "valtext"></div>
+     <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+    </p>
+</form>
+</div>
+</body>
+</html>

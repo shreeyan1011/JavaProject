@@ -1,0 +1,72 @@
+{
+  "jobs": {
+    "computer": [
+      {
+        "name": "A company",
+        "type": "Contract",
+        "title": "Software Engineer PHP",
+        "location": "cork"
+      },
+      {
+        "name": "B company",
+        "type": "Contract",
+        "title": "Software Engineer Java",
+        "location": "cork"
+      },
+      {
+        "name": "C company",
+        "type": "Permanent",
+        "title": "Java Developer",
+        "location": "Dublin"
+      },
+      {
+        "name": "B company",
+        "type": "Contract",
+        "title": "Software Engineer Ruby",
+        "location": "Meath"
+      }
+    ],
+    "mechanical": [
+      {
+        "name": "A company",
+        "type": "Contract",
+        "title": "Mechanical Engineer",
+        "location": "Dublin"
+      },
+      {
+        "name": "B company",
+        "type": "Contract",
+        "title": "Junior Mechanical Engineer",
+        "location": "cork"
+      },
+      {
+        "name": "C company",
+        "type": "Permanent",
+        "title": "Production Engineer",
+        "location": "Donegal"
+      }
+    ],
+    "civil": [
+      {
+        "name": "D company",
+        "type": "Permanent",
+        "title": "Civil Engineer",
+        "location": "Donegal"
+      }
+    ],
+    "management": [
+      {
+        "name": "E company",
+        "type": "Permanent",
+        "title": "Senior Manager",
+        "location": "Limerick"
+      },
+      {
+        "name": "K company",
+        "type": "Permanent",
+        "title": "Junior Manager",
+        "location": "Galway"
+      }
+    ]
+  }
+}

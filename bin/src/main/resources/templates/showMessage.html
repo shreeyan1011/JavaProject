@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show message</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Confirm Details:</h1>
+
+<p th:text="'FName: ' + ${user.fname}"></p>
+<p th:text="'LName:  ' + ${user.lname}"></p>
+<p th:text="'ADDRESS:  ' + ${user.addr}"></p>
+<p th:text="'Gender:  ' + ${user.gender}"></p>
+<p th:text="'Country:  ' + ${user.Country}"></p>
+<p th:text="'County:  ' + ${user.County}"></p>
+<a href="/addUser">Change details</a>
+<a href="/upload">Next</a>
+</body>
+</html>
