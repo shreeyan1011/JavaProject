@@ -7,14 +7,20 @@
 <script type="text/javascript" src="/js/formauth.js"></script>
 </head>
 <body>
-
-<h1>Upload your CV:</h1>
-
-  <label for="myfile">Upload CV:</label>
-  <input type="file" id="myfile" name="myfile" ><br><br>
+<div id ="upload">
+<div class="center">
+<form action="#" name ="uploadform" onsubmit="return checkform()">
+  <label for="myfile">CV:</label><br><br>
+  <input type="file" id="myfile" name="myfile" ><br><br><br>
+   <div id ="myfile1" class= "valtext"></div>
+   <label for="mycover">Cover Letter:&nbsp;</label><br><br>
+  <input type="file" id="mycover" name="mycover" ><br><br>
   <div id ="cv" class= "valtext"></div> 
-   <p>
+  <div class="buttonHolder">
         <input type="submit" value="Submit"/>
-    </p>
+    </div>     
+</form> 
+ </div>  
+</div>
 </body>
 </html>

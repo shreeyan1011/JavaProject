@@ -1,1 +1,1 @@
-alert("home js included");
+//alert("home js included");

@@ -1,10 +1,8 @@
 body {
 background-image: url('/styles/images/recruithome.jpg');
-background-color: #2F4F4F;
-font-family:
-Georgia, "Times New Roman",
-Times, serif; 
-color: black;
+background-color: #F0FFFF;
+font-family:Arial, Helvetica, sans-serif;
+color:#4682B4;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: bottom;
@@ -12,8 +10,8 @@ background-size: 70% 70%;
 }
 .header {
   text-align: center;
-  background: #33333352;
-  color: white;
+  background: #F0FFFF;
+  color:#4682B4;
 }
 
 .navbar {
@@ -50,7 +48,7 @@ background-size: 70% 70%;
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+a.active,.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #708090;
 }
 
@@ -97,3 +95,10 @@ background-size: 70% 70%;
   text-align: right;
 }
 
+.abc {
+	text-align: center;
+	color:#483D8B;
+	font-size: 50px;
+	font-style: italic;
+	font-family:Arial, Helvetica, sans-serif;
+}
