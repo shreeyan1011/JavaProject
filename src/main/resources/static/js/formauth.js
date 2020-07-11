@@ -81,7 +81,7 @@ function checkform(){
 else
 if(myfile!="" || myfile!=null)
 {
-	alert(" Thank you. You have sucessfully registered for ABC Recruitment services.You will be redirected to the home page now");
+	alert(" Thank you. You have sucessfully registered for TalentHire Recruitment services.You will be redirected to the home page now");
 	window.location.replace("http://localhost:8080/home.html");
 	return false;
 }

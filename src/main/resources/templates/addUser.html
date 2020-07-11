@@ -11,7 +11,7 @@
 <p class="align">Please fill out your details in the form below so that we can find the suitable job for you.</p>
 <div class="center">
 <form action="#" th:action="@{/addUser}" th:object="${user}" method="post" onsubmit="return validateForm()">
-  <div class="signin">Already have an account?<a href="/signin.html">Sign in</a></div>
+  <div class="signin">Already have an account?<a href="/showMessage">Sign in</a></div>
   <h3 class="align">Candidate details</h3>
   <label for="fname">First name:</label>
   <input type="text" id="fname" th:field="*{fname}">
@@ -22,7 +22,7 @@
   <label for="email">Email:</label>
   <input type="text" id="email" th:field="*{email}">
    <label for="addr">Address:</label>
-  <input type="text" id="addr" th:field="*{addr}">
+  <input type="text" id="addr" th:field="*{addr}" size="35">
   <div id ="email1" class= "valtext"></div>	
   <div id ="addr1" class= "valtext"></div>
   <p>Gender:

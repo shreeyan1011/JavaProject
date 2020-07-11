@@ -7,20 +7,19 @@
 </head>
 <body>
 
-<h1>Confirm Details:</h1>
 <div class="center">
-<p th:text="'First name: ' + ${user.fname}"></p>
-<p th:text="'Last name:  ' + ${user.lname}"></p>
-<p th:text="'Email:  ' + ${user.email}"></p>
-<p th:text="'Address:  ' + ${user.addr}"></p>
-<p th:text="'Gender:  ' + ${user.gender}"></p>
-<p th:text="'Country:  ' + ${user.Country}"></p>
-<p th:text="'County:  ' + ${user.County}"></p>
+<form action="#" th:action="@{/showMessage}" th:object="${user}" method="post">
+  <h3 class="align">Candidate details</h3>
+  <label for="email">Email:</label>
+  <input type="text" id="email" th:field="*{email}">
+  &nbsp;
+  <label for="pswd">Password:</label>
+  <input type="password" id="pswd" th:field="*{pswd}"><br><br>
   <div class="buttonHolder">
-<a href="/addUser">Change details</a>
-&nbsp;&nbsp;&nbsp;
-<a href="/upload.html">Next</a>
-</div>
-</div>
+        <input type="submit" value="Submit"/>
+    </div>     
+  <div class="signin"><a href="/forgotpswd">Forgot passord?</a></div>
+  </form>
+  </div>
 </body>
 </html>
